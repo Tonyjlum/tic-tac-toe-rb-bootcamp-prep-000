@@ -77,3 +77,8 @@ def winner(board)
   return nil unless symbol
   board[symbol.first]
 end
+
+def play
+  until over?
+  end
+end
