@@ -83,3 +83,4 @@ def play(board)
   until over?(board)
   turn(board)
 end
+end
