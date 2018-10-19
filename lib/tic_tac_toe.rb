@@ -75,7 +75,7 @@ def turn(board, index, token)
     move(board, index, token)
     display_board(board)
   else
-    turn(board)
+    turn(board, index, token)
   end
 end
 
