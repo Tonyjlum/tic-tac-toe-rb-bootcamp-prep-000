@@ -81,6 +81,6 @@ end
 
 def play(board)
   until over?(board)
-  turn(board)
+  turn(board, index, token)
   end
 end
