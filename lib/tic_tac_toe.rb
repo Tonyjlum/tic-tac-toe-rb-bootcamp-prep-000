@@ -67,3 +67,13 @@ def draw?(board)
   full?(board) && !won?(board)
 end
 
+def over?(board)
+  return true if draw?(board)
+  won?(board)
+end
+
+def winner(board)
+  symbol = won?(board)
+  return nil unless symbol
+  board[symbol.first]
+end
