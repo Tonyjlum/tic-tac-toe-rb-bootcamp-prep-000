@@ -67,7 +67,7 @@ def current_player(board_array)
   end
 end
 
-def turn(board)
+def turn(board, index, token)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
