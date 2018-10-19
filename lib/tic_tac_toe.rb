@@ -78,7 +78,8 @@ def winner(board)
   board[symbol.first]
 end
 
-def play
+def play(board)
   until over?
+  
   end
 end
