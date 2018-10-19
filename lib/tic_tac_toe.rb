@@ -66,15 +66,3 @@ def current_player(board_array)
     "O"
   end
 end
-
-def turn(board, index, token)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
-  if valid_move?(board, index, token)
-    move(board, index, token)
-    display_board(board)
-  else
-    turn(board, index, token)
-  end
-end
