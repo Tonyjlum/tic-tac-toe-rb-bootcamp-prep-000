@@ -50,3 +50,11 @@ def current_player(board_array)
   end
 end
 
+def won?(board)
+  WIN_COMBINATIONS.each do |set|
+    return set if board[set[0]] == board[set[1]] && 
+    board[set[1]] == board[set[2]] && 
+    board[set[0]] != " "
+  end
+  false
+end
