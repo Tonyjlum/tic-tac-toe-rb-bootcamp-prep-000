@@ -79,7 +79,7 @@ def turn(board, index, token)
   end
 end
 
-def play(board)
+def play(board, index, token)
   until over?(board)
   turn(board, index, token)
   end
